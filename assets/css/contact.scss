@@ -1,0 +1,129 @@
+//--------------------------------------  body ------------------------------------
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right ,#da9ecdc2, #8fedebb7 );
+}
+
+//--------------------------------------  renseignement ------------------------------------
+.container-contact {
+    display: flex;
+    width: 100%;
+}
+
+.formulaire2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}
+
+#Nom {
+    font-size: 3em;
+}
+
+p {
+    text-align: center;
+}
+
+.contact2 {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact3 {
+    display: flex;
+    align-items: center;
+    height: 34%;
+    margin-left: 7%;
+}
+
+.margin {
+    margin-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: black;
+}
+
+//--------------------------------------  renseignement ------------------------------------
+
+.formulaire {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: solid black 1px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+    height: 38rem;
+    width: 75%;
+    padding: 3%;
+}
+
+.titre_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#message {
+    height: 11rem;
+}
+
+.btn {
+    box-shadow: 0px 1px 5px 0px black;
+    border-radius: 0.25em;
+    transition: all 0.5s ease;
+    background-color: #afd8e7;
+    width: 100%;
+}
+
+
+//--------------------------------------  responsive ------------------------------------
+
+@media (max-width: 850px) {
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulaire {
+        width: 84%;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    #Nom {
+        font-size: 2em;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .formulaire2 {
+        margin-top: 0; 
+    }
+
+    .contact2 {
+        width: 126%;
+    }
+}

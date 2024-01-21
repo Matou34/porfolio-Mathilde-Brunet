@@ -1,0 +1,232 @@
+/*/----------------------------------------Body--------------------------------------------/*/
+
+body{
+    background: linear-gradient(to right ,#da9ecdc2, #8fedebb7 );
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.container-T {
+    display: flex;
+    margin-top: 5%;
+}
+
+/*/------------------------------Titre-Mathilde-Brunet--------------------------------------/*/
+
+.taille {
+    font-size: 11em;
+    height: 1.1em;
+    font-family: 'Barlow', sans-serif;
+
+}
+.nomPrenom {
+    margin-left: 0.67em;
+    display: flex;
+    text-transform: uppercase;
+}
+
+#nom {
+    display: flex;
+    align-items: center;
+}
+
+/*/----------------------------------- Développeur-web----------------------------------------------/*/
+
+h1 {
+    text-transform: uppercase;
+    margin-left: 3.5em ;
+}
+
+/*---------------------------------------------Photo-------------------------------------------------/*/
+
+#ImG {
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+    justify-content: center;
+}
+
+.img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;  
+    width: 30em;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1); 
+    transform-origin: center center; 
+}
+
+figure {
+    margin: 0;
+}
+
+/*---------------------------------------Description-------------------------------------*/
+
+.description {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-size: 1.3em;
+}
+
+/*/-----------------------------changement de couleur des lettres-------------------------------/*/
+
+.ChangeColor:hover {
+    color: #70a0df;
+}
+
+/*/-------------------------------Animation lettres qui bouge---------------------------------------/*/
+
+.nomPrenom .blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+    
+}
+
+.animated:hover {
+    
+    animation-name: bounce;
+    animation-duration: 1,5s;
+    
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        -ms-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        -ms-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        -ms-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        -ms-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        -ms-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+
+//--------------------------------------  responsive ------------------------------------
+@media screen and (max-width: 1440px) {
+    .taille {
+        font-size: 8em;
+    
+    }
+
+    h1 {
+        margin-left: 2.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .Container-nomPrenom {
+        margin-top: 3em;
+    }
+
+    .taille {
+        font-size: 6em;
+    
+    }
+
+    h1 {
+        margin-left: 1.9em !important;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Container-nomPrenom {
+        margin-top: 1em;
+    }
+
+    .nomPrenom  {
+        font-size: 5em;
+        display: flex;
+        justify-content: center;
+        margin-right: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.8em !important;
+        display: flex;
+        justify-content: center;
+        margin-right: 2.5em !important;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .nomPrenom  {
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1em !important;
+        display: flex;
+        justify-content: center;
+        margin-right: 2.5em !important;
+        margin-top: 0.5em;
+    }
+
+
+}
+
+
+

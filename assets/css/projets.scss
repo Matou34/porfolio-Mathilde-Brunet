@@ -1,0 +1,230 @@
+:root {
+    --purple: hsl(240, 80%, 89%);
+    --pink: hsl(0, 59%, 94%);
+    --light-bg: hsl(204, 37%, 92%);
+    --light-gray-bg: hsl(0, 0%, 94%);
+    --white: hsl(0, 0%, 100%);
+    --dark: hsl(0, 0%, 7%);
+    --text-gray: hsl(0, 0%, 30%);
+}
+
+$font: 'Barlow', sans-serif ;
+
+
+/*/-------------------------------------Body----------------------------------------------/*/
+
+
+body{
+	font-family: $font;
+    background: linear-gradient(to right ,#da9ecdc2, #8fedebb7 );
+}
+
+/*/------------------------------------ Container ------------------------------------/*/
+
+.container-Card {
+    display: flex;
+    flex-direction: column;
+}
+//------------------------------------ Description ---------------------------------
+
+.descriptions {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 18em;
+    margin-bottom: 5%;
+
+}
+
+.descriptionn {
+	width: 70vw;
+	font-family: $font;
+	font-size: 1.6em;
+	text-align: center;
+
+}
+
+//----------------------------------- Card --------------------------------------------
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 28em;
+    padding: 24px;
+    background: #fff;
+    margin-bottom: 3%;
+}
+
+.box-top {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.box-image {
+    background-image: url('../img/cv.png');
+    background-size: cover;
+    height: 20em;
+}
+
+.box-Image {
+    background-image: url('../img/calculator.png');
+    background-size: cover;
+    background-position: right;
+    height: 20em;
+}
+
+.box-images {
+    background-image: url('../img/jeux-dbz.png');
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.box-Images {
+    background-image: url('../img/quiz\ game-of-thrones.png');
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+}
+
+.title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.box-title {
+    border-left: 3px solid var(--purple);
+    padding-left: 3%;
+    margin-top: 2%;
+}
+
+.user-follow-info {
+    color: hsl(0, 0%, 60%);
+}
+
+p {
+    line-height: 1.7;
+    color: var(--text-gray);
+}
+
+
+.button {
+    text-align: center;
+    margin-top: auto;
+    padding: 4%;
+    color: #000;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px black inset;
+    transition: background 0.4s ease;
+}
+
+.button:hover {
+    background: var(--purple);
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fill-one {
+    background: var(--light-bg);
+}
+
+.fill-two {
+    background: var(--pink);
+}
+
+//--------------------------------------  responsive ------------------------------------
+
+
+@media (min-width: 1024px) {
+    .title-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .user-follow-info {
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    //-----Description----
+    .descriptionn {
+        width: 70vw;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    //-----Card----
+    .wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        margin: 1%;
+    }
+    
+}
+
+@media (min-width: 840px) {
+    .title-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .title-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+}
+
+
+
+@media (min-width: 460px) {
+    .title-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+}
+
+@media (min-width: 320px) {
+    .title-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+}
+
+
